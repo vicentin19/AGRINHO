@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e cores sóbrias */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: rgb(243, 235, 220);
+  color: #333;
+}
+header {
+  background: linear-gradient(90deg, #b3e0c7, #3ab971, #16743e,  #003015, #16743e, #3ab971,  #b3e0c7 );
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+
+/* Aba estilo PORTIF-LIO */
+nav.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+nav.tabs button,
+nav.tabs .flashcard {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: white;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s;
+}
+nav.tabs button.active,
+nav.tabs button:hover {
+  border-color: #cdeac0;
+}
+nav.tabs .flashcard {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Conteúdo das abas */
+main {
+  padding: 30px;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.tab-content h2 {
+  margin-bottom: 15px;
+}
+.tab-content p {
+  margin-bottom: 10px;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+
+    .container {
+  text-align: center;
+   margin-top: 00px;
+}
+
+h1,h2 {
+  text-align: center;
+}
+
+
+/* Rodapé */
+footer {
+  background: linear-gradient(90deg, #b3e0c7, #3ab971, #16743e,  #003015, #16743e, #3ab971,  #b3e0c7);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  nav.tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav.tabs button,
+  nav.tabs .flashcard {
+    width: 100%;
+    max-width: 300px;
+  }
+}
